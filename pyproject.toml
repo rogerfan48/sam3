@@ -64,6 +64,8 @@ notebooks = [
     "einops",
     "scikit-image",
     "scikit-learn",
+    "imageio",
+    "imageio-ffmpeg",
 ]
 train = [
     "hydra-core",

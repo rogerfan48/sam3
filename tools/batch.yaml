@@ -1,0 +1,153 @@
+videos:
+  # - name: "bears-fighting-by-road"
+  #   sam3_prompts: ["animal"]
+
+  # - name: "boxer-punching-towards-camera"
+  #   sam3_prompts: ["person", "glove"]
+
+  # - name: "boxing-fisheye"
+  #   sam3_prompts: ["person"]
+
+  # - name: "Car-Ball-Soccer"
+  #   sam3_prompts: ["car", "ball"]
+
+  # - name: "cat-in-the-sun"
+  #   sam3_prompts: ["cat"]
+
+  # - name: "Cycle-Ball-Match"
+  #   sam3_prompts: ["person", "bicycle"]
+
+  # - name: "disc-jockey"
+  #   sam3_prompts: ["person"]
+
+  # - name: "Dodgeball-Match-Scene"
+  #   sam3_prompts: ["person", "ball"]
+
+  # - name: "Dodgeball-Team-Play"
+  #   sam3_prompts: ["person"]
+
+  # - name: "dog-gooses"
+  #   sam3_prompts: ["dog", "goose"]
+
+  # - name: "dogs-gathering-around-food"
+  #   sam3_prompts: []
+
+  # - name: "dogs-jump"
+  #   sam3_prompts: []
+
+  # - name: "dogs-scale"
+  #   sam3_prompts: []
+
+  # - name: "fashion-cats-walking-room"
+  #   sam3_prompts: []
+
+  # - name: "female-runners-on-track"
+  #   sam3_prompts: []
+
+  # - name: "Fencers-Fast-Duel"
+  #   sam3_prompts: []
+
+  # - name: "Football-Match-Start"
+  #   sam3_prompts: []
+
+  # - name: "football-tackle-front-view"
+  #   sam3_prompts: []
+
+  # - name: "gold-fish"
+  #   sam3_prompts: []
+
+  # - name: "hockey"
+  #   sam3_prompts: []
+
+  # - name: "Ice-Hockey-Battle"
+  #   sam3_prompts: []
+
+  # - name: "Ice-Hockey-Clash"
+  #   sam3_prompts: []
+
+  # - name: "Ice-Hockey-Rush"
+  #   sam3_prompts: []
+
+  # - name: "judo"
+  #   sam3_prompts: []
+
+  # - name: "judo-championship-match"
+  #   sam3_prompts: []
+
+  # - name: "loading"
+  #   sam3_prompts: []
+
+  # - name: "Martial-Arts-Sync-Performance"
+  #   sam3_prompts: []
+
+  # - name: "men-playing-tennis-outdoors"
+  #   sam3_prompts: []
+
+  # - name: "night-race"
+  #   sam3_prompts: []
+
+  # - name: "night-skating-on-road"
+  #   sam3_prompts: []
+
+  # - name: "ostrich-cart-race"
+  #   sam3_prompts: []
+
+  # - name: "pandas-playing-with-washbasin"
+  #   sam3_prompts: []
+
+  # - name: "Parkour-Chase"
+  #   sam3_prompts: []
+
+  # - name: "people-jumping-rope"
+  #   sam3_prompts: []
+
+  # - name: "pigs"
+  #   sam3_prompts: []
+
+  # - name: "racing-dogs-on-track"
+  #   sam3_prompts: []
+
+  # - name: "Relay-Race-Sprint-Showdown"
+  #   sam3_prompts: []
+
+  # - name: "riders-downhill-drift-trikes"
+  #   sam3_prompts: []
+
+  # - name: "salsa"
+  #   sam3_prompts: []
+
+  # - name: "soapbox"
+  #   sam3_prompts: []
+
+  # - name: "strong-men-arm-wrestling"
+  #   sam3_prompts: []
+
+  # - name: "Strongman-Rock-Cart-Challenge"
+  #   sam3_prompts: []
+
+  # - name: "team-rowing-on-river"
+  #   sam3_prompts: []
+
+  # - name: "Trampoline-Ball-Game"
+  #   sam3_prompts: []
+
+  # - name: "trucks-race"
+  #   sam3_prompts: []
+
+  # - name: "Tug-of-War-Battle"
+  #   sam3_prompts: []
+
+  # - name: "tuk-tuk"
+  #   sam3_prompts: []
+
+  # - name: "Weightlifting-Duel-Scene"
+  #   sam3_prompts: []
+
+  # - name: "wingsuit-flyers-over-ocean"
+  #   sam3_prompts: []
+
+  # - name: "women-dancing-in-gym"
+  #   sam3_prompts: []
+
+  # - name: "Women-Weightlifting-Show"
+  #   sam3_prompts: []
