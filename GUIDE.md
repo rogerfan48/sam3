@@ -42,6 +42,33 @@ conda run -n sam3 python tools/update_background.py \
     --dataset_root data/OurBench
 ```
 
+### Union Two Existing Masks
+Create one new mask from the union (OR) of two existing masks in the same video:
+```bash
+conda run -n sam3 python tools/union_masks.py \
+  --video_dir data/OurBench/bears-fighting-by-road \
+  --mask1 bear_left \
+  --mask2 bear_right \
+  --output bear_union
+```
+
+Notes:
+- `--mask1` and `--mask2` can be either mask names (without `.mp4`) or full paths
+- Output is saved as `masks/<output>.mp4` using the same encoding path as other masks (H.264/yuv420p when available)
+- `config.yaml` is updated automatically unless `--no_update_config` is set
+
+### Audit masks/ vs config.yaml Consistency
+Check that `masks/*.mp4` filenames exactly match `segments[].mask_path` entries in `config.yaml`:
+```bash
+conda run -n sam3 python tools/check_mask_config_consistency.py \
+  --dataset_root data/OurBench
+```
+
+This tool reports, per video directory:
+- `EXTRA_IN_MASKS`: files in `masks/` but not listed in `config.yaml`
+- `MISSING_IN_MASKS`: files listed in `config.yaml` but not present in `masks/`
+- Missing folders/files or config parse errors
+
 ### Tips
 - **Unsure how many objects?** Use `--auto_name` first, then rename/delete as needed
 - **Distinguish similar objects?** Use specific prompts: `"person in red"`, `"person in blue"`
@@ -252,6 +279,8 @@ This format plays in VSCode, browsers, VLC, and all modern players.
 | `tools/generate_masks.py` | Generate masks for a single video (also exposes `process_video()` for batch use) |
 | `tools/batch_process.py` | Batch process videos from a YAML config (model loaded once) |
 | `tools/update_background.py` | Recompute background from existing foreground masks (no model needed) |
+| `tools/union_masks.py` | Union two existing mask videos into one new mask and optionally update `config.yaml` |
+| `tools/check_mask_config_consistency.py` | Verify each video's `masks/*.mp4` exactly matches `config.yaml` `segments[].mask_path` entries |
 | `tools/reorganize_dataset.py` | Convert flat structure to per-video directory structure |
 
 ## Resources

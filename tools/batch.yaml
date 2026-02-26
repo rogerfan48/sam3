@@ -30,124 +30,132 @@ videos:
   #   sam3_prompts: ["dog", "goose"]
 
   # - name: "dogs-gathering-around-food"
-  #   sam3_prompts: []
+  #   sam3_prompts: ["dog"]
 
   # - name: "dogs-jump"
-  #   sam3_prompts: []
+  #   sam3_prompts: ["dog", "person"]
 
   # - name: "dogs-scale"
-  #   sam3_prompts: []
+  #   sam3_prompts: ["animal", "scale"]
 
   # - name: "fashion-cats-walking-room"
-  #   sam3_prompts: []
+  #   sam3_prompts: ["cat"]
 
   # - name: "female-runners-on-track"
-  #   sam3_prompts: []
+  #   sam3_prompts: ["person"]
 
   # - name: "Fencers-Fast-Duel"
-  #   sam3_prompts: []
+  #   sam3_prompts: ["person"]
 
   # - name: "Football-Match-Start"
-  #   sam3_prompts: []
+  #   sam3_prompts: ["person", "ball"]
 
   # - name: "football-tackle-front-view"
-  #   sam3_prompts: []
+  #   sam3_prompts: ["person"]
 
   # - name: "gold-fish"
-  #   sam3_prompts: []
+  #   sam3_prompts: ["fish"]
 
   # - name: "hockey"
-  #   sam3_prompts: []
+  #   sam3_prompts: ["person", "hockey stick", "puck", "tent"]
 
+  # # ERROR: FAILED !!!!!!!!!!
   # - name: "Ice-Hockey-Battle"
-  #   sam3_prompts: []
+  #   sam3_prompts: ["animal", "hockey stick", "puck"]
 
+  # # ERROR: FAILED !!!!!!!!!!
   # - name: "Ice-Hockey-Clash"
-  #   sam3_prompts: []
+  #   sam3_prompts: ["animal", "hockey stick", "puck"]
 
+  # # ERROR: FAILED !!!!!!!!!!
   # - name: "Ice-Hockey-Rush"
-  #   sam3_prompts: []
+  #   sam3_prompts: ["animal", "hockey stick", "puck"]
 
   # - name: "judo"
-  #   sam3_prompts: []
+  #   sam3_prompts: ["person"]
 
   # - name: "judo-championship-match"
-  #   sam3_prompts: []
+  #   sam3_prompts: ["person"]
 
   # - name: "loading"
-  #   sam3_prompts: []
+  #   sam3_prompts: ["person"]
 
   # - name: "Martial-Arts-Sync-Performance"
-  #   sam3_prompts: []
+  #   sam3_prompts: ["person"]
 
   # - name: "men-playing-tennis-outdoors"
-  #   sam3_prompts: []
+  #   sam3_prompts: ["person", "tennis racket", "ball"]
 
   # - name: "night-race"
-  #   sam3_prompts: []
+  #   sam3_prompts: ["car"]
 
   # - name: "night-skating-on-road"
-  #   sam3_prompts: []
+  #   sam3_prompts: ["person"]
 
   # - name: "ostrich-cart-race"
-  #   sam3_prompts: []
+  #   sam3_prompts: ["person", "ostrich", "tricycle"]
 
   # - name: "pandas-playing-with-washbasin"
-  #   sam3_prompts: []
+  #   sam3_prompts: ["panda", "washbasin"]
 
   # - name: "Parkour-Chase"
-  #   sam3_prompts: []
+  #   sam3_prompts: ["running man"]
 
+  # # WARN: no rope
   # - name: "people-jumping-rope"
-  #   sam3_prompts: []
+  #   sam3_prompts: ["person", "rope"]
 
   # - name: "pigs"
-  #   sam3_prompts: []
+  #   sam3_prompts: ["pig"]
 
   # - name: "racing-dogs-on-track"
-  #   sam3_prompts: []
+  #   sam3_prompts: ["animal"]
 
   # - name: "Relay-Race-Sprint-Showdown"
-  #   sam3_prompts: []
+  #   sam3_prompts: ["person"]
 
+  # # ERROR: FAILED !!!!!!!!!!
   # - name: "riders-downhill-drift-trikes"
-  #   sam3_prompts: []
+  #   sam3_prompts: ["person", "car", "tricycle"]
 
   # - name: "salsa"
-  #   sam3_prompts: []
+  #   sam3_prompts: ["dancer"]
 
   # - name: "soapbox"
-  #   sam3_prompts: []
+  #   sam3_prompts: ["person",  "vehicle", "tricycle"]
 
   # - name: "strong-men-arm-wrestling"
-  #   sam3_prompts: []
+  #   sam3_prompts: ["person"]
 
+  # # no container
   # - name: "Strongman-Rock-Cart-Challenge"
-  #   sam3_prompts: []
+  #   sam3_prompts: ["person", "stone pile", "container"]
 
   # - name: "team-rowing-on-river"
-  #   sam3_prompts: []
+  #   sam3_prompts: ["person", "boat", "oar"]
 
   # - name: "Trampoline-Ball-Game"
-  #   sam3_prompts: []
+  #   sam3_prompts: ["running man", "ball"]
 
   # - name: "trucks-race"
-  #   sam3_prompts: []
+  #   sam3_prompts: ["vehicle"]
 
   # - name: "Tug-of-War-Battle"
-  #   sam3_prompts: []
+  #   sam3_prompts: ["person", "rope"]
 
   # - name: "tuk-tuk"
-  #   sam3_prompts: []
+  #   sam3_prompts: ["person"]
 
   # - name: "Weightlifting-Duel-Scene"
-  #   sam3_prompts: []
+  #   sam3_prompts: ["person", "ball"]
 
+  # # WARN: not quite right
   # - name: "wingsuit-flyers-over-ocean"
-  #   sam3_prompts: []
+  #   sam3_prompts: ["person"]
 
   # - name: "women-dancing-in-gym"
-  #   sam3_prompts: []
+  #   sam3_prompts: ["person"]
 
-  # - name: "Women-Weightlifting-Show"
-  #   sam3_prompts: []
+  # no ball
+  - name: "Women-Weightlifting-Show"
+    sam3_prompts: ["person", "ball"]

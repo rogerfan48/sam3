@@ -1,5 +1,9 @@
 # SAM 3: Segment Anything with Concepts
 
+> This README is the original SAM3 project documentation and is intentionally kept for reference value.
+>
+> For our dataset workflow and custom tools (mask generation/update/union/consistency check), see [GUIDE.md](GUIDE.md).
+
 Meta Superintelligence Labs
 
 [Nicolas Carion](https://www.nicolascarion.com/)\*,
