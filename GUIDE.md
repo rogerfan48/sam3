@@ -128,21 +128,25 @@ data/OurBench/
 ### config.yaml Format
 ```yaml
 video_name: "video_name"
-prompt: ""  # Full prompt (to be filled later)
+desc: ""    # Video description (to be filled later)
+prompt: ""  # Target edit prompt for this video (to be filled later)
 sam3_prompts:
   - "person"
   - "ball"
 segments:
   - name: "person_1"
-    description: ""
+    desc: ""        # Mask description (to be filled later)
+    prompt: ""      # Target edit prompt for this mask (to be filled later)
     mask_path: "masks/person_1.mp4"
     sam3_prompt: "person"
   - name: "ball"
-    description: ""
+    desc: ""
+    prompt: ""
     mask_path: "masks/ball.mp4"
     sam3_prompt: "ball"
   - name: "background"
-    description: ""
+    desc: ""
+    prompt: ""
     mask_path: "masks/background.mp4"
     sam3_prompt: "inverse_of_all_foreground"
 ```

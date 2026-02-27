@@ -66,7 +66,8 @@ def update_config(config_path: Path, output_name: str, mask1: str, mask2: str):
     segments = [s for s in segments if s.get("name") != output_name]
     segments.append({
         "name": output_name,
-        "description": "",
+        "desc": "",
+        "prompt": "",
         "mask_path": f"masks/{output_name}.mp4",
         "sam3_prompt": f"union_of:{mask1},{mask2}",
     })

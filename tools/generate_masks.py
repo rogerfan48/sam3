@@ -247,21 +247,25 @@ def update_config_yaml(config_path, sam3_prompts, mask_info, add_background=Fals
     for info in mask_info:
         config['segments'].append({
             'name': info['name'],
-            'description': '',  # To be filled later
+            'desc': '',  # To be filled later
+            'prompt': '',
             'mask_path': info['mask_path'],
-            'sam3_prompt': info['sam3_prompt']
+            'sam3_prompt': info['sam3_prompt'],
         })
 
     # Add background if generated
     if add_background:
         config['segments'].append({
             'name': 'background',
-            'description': '',
+            'desc': '',
+            'prompt': '',
             'mask_path': 'masks/background.mp4',
-            'sam3_prompt': 'inverse_of_all_foreground'
+            'sam3_prompt': 'inverse_of_all_foreground',
         })
 
-    # Keep prompt field (to be filled later)
+    # Keep desc/prompt fields (to be filled later)
+    if 'desc' not in config:
+        config['desc'] = ''
     if 'prompt' not in config:
         config['prompt'] = ''
 

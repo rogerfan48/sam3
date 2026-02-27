@@ -121,7 +121,8 @@ def update_background(video_dir):
         segments = [s for s in segments if s.get('name') != 'background']
         segments.append({
             'name': 'background',
-            'description': '',
+            'desc': '',
+            'prompt': '',
             'mask_path': 'masks/background.mp4',
             'sam3_prompt': 'inverse_of_all_foreground',
         })
